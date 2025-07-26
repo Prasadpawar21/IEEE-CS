@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
                 <Brain className="h-6 w-6" />
               </div>
               <div>
-                <div className="text-lg font-bold">IEEE CIS</div>
+                <div className="text-lg font-bold">IEEE CS</div>
                 <div className="text-sm text-ieee-gray-400">PCCOE Chapter</div>
               </div>
             </div>
@@ -87,7 +87,7 @@ const Footer: React.FC = () => {
         {/* Bottom Bar */}
         <div className="border-t border-ieee-gray-800 mt-12 pt-8 flex flex-col sm:flex-row justify-between items-center">
           <div className="text-sm text-ieee-gray-400 mb-4 sm:mb-0">
-            © 2025 IEEE CIS PCCOE Student Chapter. All rights reserved.
+            © 2025 IEEE CS PCCOE Student Chapter. All rights reserved.
           </div>
           <div className="flex items-center space-x-2">
             <span className="text-xs text-ieee-gray-500">Powered by</span>

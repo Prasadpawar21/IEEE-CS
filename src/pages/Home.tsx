@@ -113,14 +113,14 @@ const Home: React.FC = () => {
               transition={{ duration: 0.8, delay: 0.3 }}
             >
               <motion.span 
-                className="bg-gradient-to-r from-ieee-blue-600 via-blue-600 to-purple-600 bg-clip-text text-transparent"
+                className="bg-gradient-to-r from-ieee-blue-600 via-ieee-blue-700 to-ieee-blue-600 bg-clip-text text-transparent"
                 animate={{ 
                   backgroundPosition: ['0% 50%', '100% 50%', '0% 50%'],
                 }}
                 transition={{ duration: 5, repeat: Infinity }}
                 style={{ backgroundSize: '200% 200%' }}
               >
-                IEEE CIS
+                IEEE CS
               </motion.span>
               <br />
               <motion.span 
@@ -168,7 +168,7 @@ const Home: React.FC = () => {
               transition={{ duration: 0.8, delay: 1.2 }}
             >
               <MagneticButton
-                className="group bg-gradient-to-r from-ieee-blue-600 to-blue-600 text-white px-10 py-4 rounded-2xl font-semibold text-lg shadow-2xl hover:shadow-3xl transition-all duration-500"
+                className="group bg-gradient-to-r from-ieee-blue-600 to-ieee-blue-700 text-white px-10 py-4 rounded-2xl font-semibold text-lg shadow-2xl hover:shadow-3xl transition-all duration-500"
                 onClick={() => setShowJoinModal(true)}
               >
                 <div className="flex items-center">
@@ -326,7 +326,7 @@ const Home: React.FC = () => {
                         </motion.div>
                         <motion.h3 
                           className="text-xl font-bold text-ieee-gray-900 mb-3"
-                          whileHover={{ color: "#2563eb" }}
+                          whileHover={{ color: "#047857" }}
                         >
                           {event.title}
                         </motion.h3>
@@ -357,7 +357,7 @@ const Home: React.FC = () => {
 
       {/* CTA Section */}
       <ScrollReveal>
-        <section className="py-20 bg-gradient-to-r from-ieee-blue-600 via-blue-600 to-purple-600 text-white relative overflow-hidden">
+        <section className="py-20 bg-gradient-to-r from-ieee-blue-600 to-blue-700 text-white relative overflow-hidden">
           <motion.div
             className="absolute inset-0 opacity-20"
             animate={{

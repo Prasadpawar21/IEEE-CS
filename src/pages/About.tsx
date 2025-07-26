@@ -9,7 +9,7 @@ const About: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h1 className="text-4xl sm:text-5xl font-bold text-ieee-gray-900 mb-6">
-              About <span className="text-ieee-blue-600">IEEE CIS PCCOE</span>
+              About <span className="text-ieee-blue-600">IEEE CS PCCOE</span>
             </h1>
             <p className="text-xl text-ieee-gray-600 max-w-3xl mx-auto">
               Pioneering computational intelligence research and fostering innovation in artificial intelligence, 
