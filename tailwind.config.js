@@ -69,17 +69,17 @@ export default {
     extend: {
       colors: {
         'ieee-blue': {
-          50: '#ecfdf5',
-          100: '#d1fae5',
-          200: '#a7f3d0',
-          300: '#6ee7b7',
-          400: '#34d399',
-          500: '#10b981',
-          600: '#059669',
-          700: '#047857',
-          800: '#065f46',
-          900: '#064e3b',
-          950: '#022c22'
+          50:  '#FFF8E6',  // very light yellow
+          100: '#FFEFC2',  // light pastel yellow
+          200: '#FFD98C',  // soft yellow-orange
+          300: '#FFC155',  // medium orange-yellow
+          400: '#FFAB26',  // bright orange-yellow
+          500: '#F28C00',  // main logo color
+          600: '#D97706',  // deeper amber
+          700: '#B45309',  // darker orange-brown
+          800: '#92400E',  // dark burnt orange
+          900: '#78350F',  // deep brown-orange
+          950: '#451A03'   // almost dark brown
         },
         'ieee-gray': {
           50: '#f8fafc',
@@ -93,7 +93,7 @@ export default {
           800: '#1e293b',
           900: '#0f172a'
         }
-      },
+      } ,
       fontFamily: {
         'sans': ['Inter', 'system-ui', 'sans-serif'],
       },

@@ -4,6 +4,8 @@ import { Menu, X, Brain } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import MagneticButton from './MagneticButton';
 import JoinUsModal from './JoinUsModal';
+import logo from '../Images/IEEE_Computer.png'
+import pccoe from '../Images/pccoe-logo.png'
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,7 +13,7 @@ const Navbar: React.FC = () => {
   const [showJoinModal, setShowJoinModal] = useState(false);
   const location = useLocation();
 
-  useEffect(() => {
+  useEffect( () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
     };
@@ -72,7 +74,7 @@ const Navbar: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
-            <Link to="/" className="flex items-center space-x-2 group">
+            {/* <Link to="/" className="flex items-center space-x-2 group">
               <motion.div
                 className="p-2 bg-gradient-to-br from-ieee-blue-600 to-green-700 rounded-xl group-hover:from-green-700 group-hover:to-green-800 transition-all duration-300 shadow-lg"
                 whileHover={{ scale: 1.05, rotate: 5 }}
@@ -94,8 +96,12 @@ const Navbar: React.FC = () => {
                   PCCOE
                 </motion.span>
               </div>
-            </Link>
-
+            </Link> */}
+            {/* <div className='flex items-center space-x-4'>
+              <img src={pccoe} alt="PCCOE Logo" className="h-20 w-auto"/>
+              <img src={logo} alt="IEEE CS Logo" className="h-10 w-auto"/>
+            </div> */}
+            <img src={logo} alt="IEEE CS Logo" className="h-10 w-auto"/>
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-1">
               {navItems.map((item, index) => (
@@ -110,20 +116,20 @@ const Navbar: React.FC = () => {
                     to={item.path}
                     className={`relative px-4 py-2 text-sm font-medium transition-all duration-300 rounded-lg group ${
                       location.pathname === item.path
-                        ? 'text-green-600'
-                        : 'text-gray-700 hover:text-green-600'
+                        ? 'text-ieee-blue-600'
+                        : 'text-ieee-blue-700 hover:text-ieee-blue-600'
                     }`}
                   >
                     <span className="relative z-10">{item.label}</span>
                     {location.pathname === item.path && (
                       <motion.div
                         layoutId="activeTab"
-                        className="absolute inset-0 bg-green-50 rounded-lg"
+                        className="absolute inset-0 bg-ieee-blue-50 rounded-lg"
                         transition={{ type: 'spring', bounce: 0.2, duration: 0.6 }}
                       />
                     )}
                     <motion.div
-                      className="absolute inset-0 bg-green-50 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                      className="absolute inset-0 bg-ieee-blue-50 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                       whileHover={{ scale: 1.05 }}
                     />
                   </Link>
@@ -131,7 +137,7 @@ const Navbar: React.FC = () => {
               ))}
 
               <MagneticButton
-                className="ml-4 bg-gradient-to-r from-green-600 to-green-700 text-white px-6 py-2 rounded-xl font-medium shadow-lg hover:shadow-xl transition-all duration-300"
+                className="ml-4 bg-gradient-to-r from-ieee-blue-500 to-ieee-blue-400 text-white px-6 py-2 rounded-xl font-medium shadow-lg hover:shadow-xl transition-all duration-300"
                 onClick={() => setShowJoinModal(true)}
               >
                 Join Us
@@ -142,7 +148,7 @@ const Navbar: React.FC = () => {
             <div className="md:hidden">
               <motion.button
                 onClick={() => setIsOpen(!isOpen)}
-                className="p-2 rounded-xl text-gray-600 hover:text-green-600 hover:bg-gray-100 transition-all duration-300"
+                className="p-2 rounded-xl text-gray-600 hover:text-ieee-blue-600 hover:bg-gray-100 transition-all duration-300"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -197,8 +203,8 @@ const Navbar: React.FC = () => {
                         onClick={() => setIsOpen(false)}
                         className={`block px-3 py-2 rounded-xl text-base font-medium transition-all duration-300 ${
                           location.pathname === item.path
-                            ? 'text-green-600 bg-green-50'
-                            : 'text-gray-700 hover:text-green-600 hover:bg-gray-50'
+                            ? 'text-ieee-blue-600 bg-ieee-blue-50'
+                            : 'text-gray-700 hover:text-ieee-blue-600 hover:bg-gray-50'
                         }`}
                       >
                         {item.label}
@@ -216,7 +222,7 @@ const Navbar: React.FC = () => {
                         setIsOpen(false);
                         setShowJoinModal(true);
                       }}
-                      className="block w-full mx-3 mt-4 bg-gradient-to-r from-green-600 to-green-700 text-white px-6 py-3 rounded-xl hover:from-green-700 hover:to-green-800 transition-all duration-300 font-medium text-center shadow-lg"
+                      className="block w-full mx-3 mt-4 bg-gradient-to-r from-ieee-blue-600 to-ieee-blue-700 text-white px-6 py-3 rounded-xl hover:from-ieee-blue-700 hover:to-ieee-blue-800 transition-all duration-300 font-medium text-center shadow-lg"
                     >
                       Join Us
                     </button>

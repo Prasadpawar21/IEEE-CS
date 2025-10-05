@@ -1,5 +1,6 @@
 import React from 'react';
 import { Target, Eye, Award, Users, Globe, BookOpen } from 'lucide-react';
+import team from '../Images/Induction-2.jpg'
 
 const About: React.FC = () => {
   return (
@@ -25,13 +26,10 @@ const About: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl font-bold text-ieee-gray-900 mb-6">
-                What is IEEE CIS?
+                What is IEEE CS?
               </h2>
               <p className="text-lg text-ieee-gray-600 mb-6">
-                The IEEE Computational Intelligence Society (CIS) is a global community of researchers, 
-                practitioners, and students working on biologically and linguistically motivated computational 
-                paradigms including neural networks, connectionist systems, genetic algorithms, evolutionary 
-                programming, fuzzy systems, and hybrid intelligent systems.
+                IEEE CS is the IEEE Computer Society, the world's leading membership organization for professionals in computer science and technology, dedicated to advancing the field through information sharing, networking, and career development resources.
               </p>
               <p className="text-lg text-ieee-gray-600 mb-8">
                 Our PCCOE Student Chapter serves as a bridge between academic learning and industry applications, 
@@ -52,13 +50,7 @@ const About: React.FC = () => {
             <div className="relative">
               {/* Placeholder for team photo */}
               <div className="bg-gradient-to-br from-ieee-blue-100 to-ieee-blue-200 rounded-2xl p-8 text-center">
-                <Users className="h-32 w-32 text-ieee-blue-600 mx-auto mb-4" />
-                <p className="text-ieee-gray-700 font-medium">
-                  [Team Photo Placeholder]
-                </p>
-                <p className="text-sm text-ieee-gray-500 mt-2">
-                  IEEE CIS PCCOE Executive Committee 2025
-                </p>
+                <img src={team} alt="IEEE CIS Team" className="rounded-2xl shadow-lg mx-auto" />
               </div>
             </div>
           </div>
@@ -77,9 +69,7 @@ const About: React.FC = () => {
                 <h3 className="text-2xl font-bold text-ieee-gray-900">Our Vision</h3>
               </div>
               <p className="text-lg text-ieee-gray-600">
-                To be the leading student chapter in computational intelligence, fostering innovation, 
-                research excellence, and industry collaboration while preparing students to become 
-                future leaders in AI and intelligent systems.
+                To be the leading provider of technical information, community services, and personalized services for the world's computing professionals, recognized for their contributions to improving global conditions
               </p>
             </div>
 
@@ -91,9 +81,7 @@ const About: React.FC = () => {
                 <h3 className="text-2xl font-bold text-ieee-gray-900">Our Mission</h3>
               </div>
               <p className="text-lg text-ieee-gray-600">
-                To provide a platform for students to explore, learn, and contribute to computational 
-                intelligence through workshops, seminars, research projects, and industry interactions 
-                while promoting ethical AI development.
+                To empower professionals, fuel global technological advancement, develop leaders, drive rapid tech evolution, and foster community-based initiatives through conferences, publications, and programs.
               </p>
             </div>
           </div>
@@ -143,7 +131,7 @@ const About: React.FC = () => {
       </section>
 
       {/* College Information */}
-      <section className="py-20 bg-gradient-to-br from-ieee-blue-600 to-blue-700 text-white">
+      <section className="py-20 bg-gradient-to-br from-ieee-blue-500 to-ieee-blue-400 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-3xl font-bold mb-6">

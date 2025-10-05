@@ -9,6 +9,12 @@ import ParallaxSection from '../components/ParallaxSection';
 import MagneticButton from '../components/MagneticButton';
 import FloatingCard from '../components/FloatingCard';
 import JoinUsModal from '../components/JoinUsModal';
+import Induction from '../Images/Induction-1.jpg';
+import FOC from '../Images/FOP-3.jpg';
+import Workshop from '../Images/Robotics-workshop-3.jpg'
+import logo from '../Images/IEEE-CS-circle.png'
+
+
 
 const Home: React.FC = () => {
   const heroRef = useRef(null);
@@ -94,7 +100,7 @@ const Home: React.FC = () => {
                   transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
                   className="absolute inset-0 bg-gradient-to-r from-ieee-blue-400/20 to-blue-500/20 rounded-3xl"
                 />
-                <Brain className="h-20 w-20 text-ieee-blue-600 relative z-10" />
+                <img src={logo} className="h-20 w-20 text-ieee-blue-600 relative z-10" />
                 <motion.div
                   className="absolute -top-2 -right-2"
                   animate={{ scale: [1, 1.2, 1], rotate: [0, 180, 360] }}
@@ -113,7 +119,7 @@ const Home: React.FC = () => {
               transition={{ duration: 0.8, delay: 0.3 }}
             >
               <motion.span 
-                className="bg-gradient-to-r from-ieee-blue-600 via-ieee-blue-700 to-ieee-blue-600 bg-clip-text text-transparent"
+                className="bg-gradient-to-r from-ieee-blue-300 via-ieee-blue-400 to-ieee-blue-600 bg-clip-text text-transparent"
                 animate={{ 
                   backgroundPosition: ['0% 50%', '100% 50%', '0% 50%'],
                 }}
@@ -168,7 +174,7 @@ const Home: React.FC = () => {
               transition={{ duration: 0.8, delay: 1.2 }}
             >
               <MagneticButton
-                className="group bg-gradient-to-r from-ieee-blue-600 to-ieee-blue-700 text-white px-10 py-4 rounded-2xl font-semibold text-lg shadow-2xl hover:shadow-3xl transition-all duration-500"
+                className="group bg-gradient-to-r from-ieee-blue-400 to-ieee-blue-500 text-white px-10 py-4 rounded-2xl font-semibold text-lg shadow-2xl hover:shadow-3xl transition-all duration-500"
                 onClick={() => setShowJoinModal(true)}
               >
                 <div className="flex items-center">
@@ -265,7 +271,7 @@ const Home: React.FC = () => {
                   whileInView={{ scale: [0.9, 1.02, 1] }}
                   transition={{ duration: 0.6 }}
                 >
-                  Upcoming <span className="text-ieee-blue-600">Events</span>
+                  Past <span className="text-ieee-blue-600">Events</span>
                 </motion.h2>
                 <p className="text-lg text-ieee-gray-600 max-w-2xl mx-auto">
                   Join our exciting events and workshops to enhance your knowledge in computational intelligence
@@ -276,22 +282,22 @@ const Home: React.FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
                 {
-                  title: 'AI Workshop Series',
-                  date: 'March 15, 2025',
-                  image: 'https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=400',
-                  description: 'Hands-on workshop on machine learning fundamentals and neural networks.',
+                  title: 'IEEE CS Induction',
+                  date: 'July 15, 2025',
+                  image: Induction,
+                  description: 'An engaging induction program to welcome new members and introduce them to the world of IEEE CS.',
                 },
                 {
-                  title: 'Tech Talk: Future of AI',
-                  date: 'March 22, 2025',
-                  image: 'https://images.pexels.com/photos/1181676/pexels-photo-1181676.jpeg?auto=compress&cs=tinysrgb&w=400',
-                  description: 'Industry experts discussing the latest trends and future of artificial intelligence.',
+                  title: 'Find One Piece',
+                  date: 'Sept 24, 2025',
+                  image: FOC ,
+                  description: 'We’re celebrating Engineer’s Day with the most thrilling adventure on campus – FIND ONE PIECE!',
                 },
                 {
-                  title: 'IEEE CIS Competition',
+                  title: 'Robotics Workshop & Handson',
                   date: 'April 5, 2025',
-                  image: 'https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=400',
-                  description: 'Annual competition showcasing innovative computational intelligence projects.',
+                  image: Workshop,
+                  description: 'One week industry training program on Robotics in assocaition with Dolphine labs Pvt. Ltd. ,Pune',
                 },
               ].map((event, index) => (
                 <motion.div
@@ -331,7 +337,7 @@ const Home: React.FC = () => {
                           {event.title}
                         </motion.h3>
                         <p className="text-ieee-gray-600 mb-4">{event.description}</p>
-                        <MagneticButton
+                        {/* <MagneticButton
                           className="text-ieee-blue-600 font-medium hover:text-ieee-blue-700 transition-colors flex items-center group"
                         >
                           <Link to="/events" className="flex items-center">
@@ -344,7 +350,7 @@ const Home: React.FC = () => {
                               <ArrowRight className="h-4 w-4" />
                             </motion.div>
                           </Link>
-                        </MagneticButton>
+                        </MagneticButton> */}
                       </div>
                     </div>
                   </FloatingCard>
@@ -357,7 +363,7 @@ const Home: React.FC = () => {
 
       {/* CTA Section */}
       <ScrollReveal>
-        <section className="py-20 bg-gradient-to-r from-ieee-blue-600 to-blue-700 text-white relative overflow-hidden">
+        <section className="py-20 bg-gradient-to-r from-ieee-blue-500 to-ieee-blue-300 text-white relative overflow-hidden">
           <motion.div
             className="absolute inset-0 opacity-20"
             animate={{

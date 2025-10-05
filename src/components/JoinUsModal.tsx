@@ -150,7 +150,7 @@ const JoinUsModal: React.FC<JoinUsModalProps> = ({ isOpen, onClose }) => {
             <div className="sticky top-0 bg-white/95 backdrop-blur-sm border-b border-ieee-gray-100 p-6 rounded-t-3xl">
               <div className="flex items-center justify-between">
                 <div>
-                  <h2 className="text-2xl font-bold text-ieee-gray-900">Join IEEE CIS PCCOE</h2>
+                  <h2 className="text-2xl font-bold text-ieee-gray-900">Join IEEE CS PCCOE</h2>
                   <p className="text-ieee-gray-600">Become part of our innovative community</p>
                 </div>
                 <button
@@ -299,7 +299,7 @@ const JoinUsModal: React.FC<JoinUsModalProps> = ({ isOpen, onClose }) => {
 
                 <div>
                   <label className="block text-sm font-medium text-ieee-gray-700 mb-2">
-                    Why do you want to join IEEE CIS? *
+                    Why do you want to join IEEE CS? *
                   </label>
                   <textarea
                     required
@@ -316,7 +316,7 @@ const JoinUsModal: React.FC<JoinUsModalProps> = ({ isOpen, onClose }) => {
               <div className="pt-6 border-t border-ieee-gray-100">
                 <motion.button
                   type="submit"
-                  className="w-full bg-gradient-to-r from-ieee-blue-600 to-blue-600 text-white py-4 rounded-xl font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                  className="w-full bg-gradient-to-r from-ieee-blue-500 to-ieee-blue-400 text-white py-4 rounded-xl font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300"
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                 >
@@ -324,7 +324,7 @@ const JoinUsModal: React.FC<JoinUsModalProps> = ({ isOpen, onClose }) => {
                 </motion.button>
                 
                 <p className="text-xs text-ieee-gray-500 text-center mt-3">
-                  By submitting this form, you agree to receive communications from IEEE CIS PCCOE.
+                  By submitting this form, you agree to receive communications from IEEE CS PCCOE.
                 </p>
               </div>
             </form>
